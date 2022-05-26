@@ -1,8 +1,13 @@
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 
 const QuoteDetail = () => {
   const params = useParams();
-  return <h1>{params.quoteId}</h1>;
+  return (
+    <div>
+      <h1>{params.quoteId}</h1>
+      <Outlet />
+    </div>
+  );
 };
 
 export default QuoteDetail;
