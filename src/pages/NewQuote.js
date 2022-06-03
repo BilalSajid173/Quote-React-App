@@ -13,7 +13,7 @@ const NewQuote = () => {
     }
   }, [status, navigate]);
   const addQuoteHandler = (quoteData) => {
-    sendRequest(addQuote);
+    sendRequest(quoteData);
   };
 
   return (
